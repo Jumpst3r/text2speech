@@ -1,0 +1,62 @@
+{
+	"general": {
+		"name": "text2speech",
+		"description": "text2speech with auto-detected input language",
+		"developer": "Nicolas Dutly",
+		"affiliation": "University Of Fribourg",
+		"email": "ndutly@student.ethz.ch",
+		"author": "Nicolas Dutly",
+		"DOI": "",
+		"type": "text-processing",
+		"license": "MIT",
+		"ownsCopyright": "0"
+	},
+	"input": [
+		{
+			"file": {
+				"name": "inputFile",
+				"description": "The input text file to translate",
+				"options": {
+					"required": true,
+					"filename": "inputFile.*",
+					"mimeTypes": {
+						"allowed": [
+							"text/plain"
+						],
+						"default": "text/plain"
+					}
+				}
+			}
+		},
+		{
+			"outputFolder": {}
+		}
+	],
+	"output": [
+		{
+			"file": {
+				"name": "audio",
+				"type": "audio",
+				"description": "resulting audio",
+				"options": {
+					"filename":"output.mp3",
+					"mimeTypes": {
+						"allowed": [
+							"audio/mp3",
+							"audio/mpeg"
+						],
+						"default": "audio/mpeg"
+					},
+					"visualization": false
+				}
+			}
+		}
+	],
+	"method": {
+		"imageType": "docker",
+		"imageName": "jumpst3r/text2speech",
+		"testData": "https://www.dropbox.com/s/0cyeygvsf2ixx84/tmptext2speech.zip?dl=1",
+		"executableType": "bash",
+		"executable_path": "/input/script.sh"
+	}
+}
