@@ -15,7 +15,7 @@ And then execute
 docker run -it --rm -v /FULL_PATH_TO/example.txt:/input/example.txt -v /FULL_PATH_TO_OUTPUT_FOLDER/:/output/ jumpst3r/text2speech sh /input/script.sh /input/example.txt /output/
 ```
 
-where `/FULL_PATH_TO/example.rxt` corresponds to the local path of the input text file.
+where `/FULL_PATH_TO/example.txt` corresponds to the local path of the input text file.
 
 The output consists of:
 
