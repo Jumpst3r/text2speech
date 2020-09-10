@@ -1,7 +1,7 @@
 {
 	"general": {
 		"name": "text2speech",
-		"description": "text2speech with auto-detected input language: Reads out the input text in a natural voice using the google voice api, outputing an audio file.",
+		"description": "This method provides the ability to read out raw text file with auto-detected input language: Reads out the input text in a natural voice using the google voice api, and output an audio file.",
 		"developer": "Nicolas Dutly",
 		"website": "https://github.com/Jumpst3r/text2speech",
 		"affiliation": "University Of Fribourg",
