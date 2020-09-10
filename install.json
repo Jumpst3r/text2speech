@@ -1,8 +1,9 @@
 {
 	"general": {
 		"name": "text2speech",
-		"description": "text2speech with auto-detected input language",
+		"description": "text2speech with auto-detected input language: Reads out the input text in a natural voice using the google voice api, outputing an audio file.",
 		"developer": "Nicolas Dutly",
+		"website": "https://github.com/Jumpst3r/text2speech",
 		"affiliation": "University Of Fribourg",
 		"email": "ndutly@student.ethz.ch",
 		"author": "Nicolas Dutly",
@@ -15,7 +16,7 @@
 		{
 			"file": {
 				"name": "inputFile",
-				"description": "The input text file to translate",
+				"description": "The raw text file to which you want to be read out loud",
 				"options": {
 					"required": true,
 					"filename": "inputFile.*",
